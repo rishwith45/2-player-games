@@ -1,0 +1,31 @@
+frontend/
+  ├── public/                # Public assets
+  ├── src/
+  │   ├── components/        # Reusable UI components
+  │   │   ├── Video/         # Video section components
+  │   │   │   ├── RemoteVideo.tsx
+  │   │   │   ├── SelfVideo.tsx
+  │   │   │   └── VideoControls.tsx
+  │   │   ├── Games/         # Game-specific components
+  │   │   │   ├── GameList.tsx
+  │   │   │   ├── GameLoader.tsx
+  │   │   │   └── GameView.tsx
+  │   │   ├── UserForm.tsx   # Component for the guest name form
+  │   │   └── Navbar.tsx     # Navigation bar (optional)
+  │   ├── pages/             # Full-page components
+  │   │   ├── LoginPage.tsx  # Page for entering the guest name
+  │   │   ├── MainPage.tsx   # Main page after connecting to a player
+  │   ├── contexts/          # Context providers (e.g., game, video chat)
+  │   │   ├── GameContext.tsx
+  │   │   ├── VideoContext.tsx
+  │   ├── hooks/             # Custom hooks
+  │   │   ├── useWebRTC.ts   # Hook for WebRTC signaling and connections
+  │   │   └── useGameState.tsx
+  │   ├── styles/            # CSS/SCSS styles
+  │   │   ├── components/
+  │   │   └── pages/
+  │   ├── utils/             # Helper functions
+  │   │   ├── signaling.ts   # Signaling for WebRTC
+  │   │   ├── api.ts         # API requests for matchmaking, etc.
+  │   ├── App.tsx            # Root component
+  │   ├── index.tsx          # Entry point
