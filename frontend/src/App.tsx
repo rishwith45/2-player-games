@@ -1,10 +1,11 @@
-
 import "./App.css";
 import LoginPage from "./pages/LoginPage";
-
+import { UserProvider } from "./contexts/UserContext";
 function App() {
   return (
-    <LoginPage></LoginPage>
+    <UserProvider>
+      <LoginPage></LoginPage>
+    </UserProvider>
   );
 }
 
